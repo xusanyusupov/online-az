@@ -1,0 +1,392 @@
+header {
+    background-color: #131921;
+    width: 100%;
+
+    nav {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 10px 0;
+        gap: 30px;
+
+        .header__wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .header__logo {
+                img {
+                    width: 120px;
+                    height: 50px;
+                }
+            }
+
+            .header__location {
+                display: flex;
+                align-items: center;
+                padding: 0 9px;
+                width: 120px;
+                height: 50px;
+                transition: .5s ease-in-out;
+
+                button {
+                    cursor: pointer;
+                    padding: 8px 9px;
+                    background: transparent;
+                    color: #ffff;
+                    transition: .5s linear;
+                    border: 1px solid #131921;
+                    &:hover {
+                        border: 1px solid #fff;
+                    }
+                }
+            }
+
+            // popper start 
+            .popper__wrapper {
+                display: none;
+                position: absolute;
+
+                .header__popper {
+                    z-index: 102;
+                    border-radius: 10px;
+                    border: 2px solid #dddd;
+                    width: 373px;
+                    background-color: #fff;
+                    box-shadow: 0 0 20px #0002;
+                    position: fixed;
+                    display: flex;
+                    flex-direction: column;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+
+                    .popper__title {
+                        padding: 16px 24px;
+                        display: flex;
+                        align-items: center;
+                        border-top-right-radius: 10px;
+                        border-top-left-radius: 10px;
+                        justify-content: space-between;
+                        background-color: #F0F2F2;
+                        border-bottom: 1px solid #ddd;
+
+                        button {
+                            .fa-xmark {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    .popper__body {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        align-items: flex-start;
+                        padding: 16px 24px;
+
+                        .popper__body-btn {
+                            align-items: center;
+                            width: 100%;
+                            text-align: center;
+                            padding: 8px 2px;
+                            border-radius: 20px;
+                            background-color: #FFD814;
+                            transition: .5s linear;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #c0a107;
+                            }
+                        }
+                    }
+
+                    .popper__line {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        white-space: nowrap;
+                        padding: 16px 24px;
+
+                        .line {
+                            width: 50%;
+                            height: 2px;
+                            background-color: #a39f9fdd;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .popper__inp {
+                        display: flex;
+                        padding: 16px 24px;
+                        align-items: center;
+                        gap: 10px;
+
+                        input {
+                            border: 1px solid #a39f9fdd;
+                            padding: 7px 10px;
+                            border-radius: 5px;
+                            width: 100%;
+                            height: 23px;
+                            outline: none;
+                        }
+
+                        button {
+                            width: 100px;
+                            height: 25px;
+                            border-radius: 20px;
+                            background: transparent;
+                            border: 1px solid #a39f9fdd;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .popper__location {
+                        padding: 16px 24px;
+
+                        select {
+                            width: 100%;
+                            border: 1px solid #a39f9fdd;
+                            padding: 8px 6px;
+                            border-radius: 10px;
+                        }
+                    }
+
+                    .popper__btn {
+                        padding: 10px 24px;
+
+                        .popper__done {
+                            padding: 8px 13px;
+                            margin-left: 80%;
+                            background-color: #FFD814;
+                            border-radius: 10px;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #c0a107;
+                            }
+                        }
+                    }
+                }
+            }
+            // popper end 
+
+            // header search start 
+            .header__search {
+                width: 1200px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+
+                .header__search-category {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+
+                    select {
+                        border: 0;
+                        border-top-left-radius: 8px;
+                        border-bottom-left-radius: 8px;
+                        height: 100%;
+                        outline: none;
+                        border-right: 1px solid #ddd;
+                        background-color: #ddd;
+                        padding: 0 10px;
+                    }
+
+                    input {
+                        flex: 1;
+                        height: 100%;
+                        outline: none;
+                        border: 0;
+                        padding-left: 10px;
+                        font-size: 15px;
+                    }
+
+                    button {
+                        width: 40px;
+                        border: 0;
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        height: 100%;
+                        background-color: #FEBD69;
+                        transition: .5s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #c0a107;
+                        }
+                    }
+
+                }
+            }
+            // header search end 
+
+            // header language start
+            .header__language {
+                button {
+                    padding: 0 5px;
+                    height: 40px;
+                    border-radius: 8px;
+                    background-color: #FEBD69;
+                    transition: .5s ease-in-out;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: #c0a107;
+                    }
+                }
+                .none{
+                    display: none;
+                    .language__popper {
+                        z-index: 101;
+                        position: fixed;
+                        display: flex;
+                        flex-direction: column;
+                        box-shadow: 0 0 20px #0003;
+                        background-color: #f0f0f0;
+                        padding: 10px 0;
+                        top: 7%;
+    
+                        p {
+                            padding: 10px 14px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+    
+                        .flex label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            padding: 10px 14px;
+    
+                            &:hover {
+                                background-color: #dddd;
+                                cursor: pointer;
+    
+                            }
+                        }
+    
+                        .flex.top {
+                            border-top: 1px solid #dddd;
+                        }
+    
+                        .flex.bottom {
+                            border-bottom: 1px solid #dddd;
+                        }
+    
+                        .chenge__current {
+                            border-bottom: 1px solid #ddd;
+    
+                            p {
+                                padding: 10px 14px;
+                            }
+    
+                            .between {
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+    
+                        .flag {
+                            display: flex;
+                            padding: 10px 14px;
+    
+                            img {
+                                width: 40px;
+                                height: 40px;
+    
+                            }
+                        }
+                    }
+                }
+            }
+            // header language end 
+
+            // header account start 
+            .header__account{
+                p{
+                    color: #fff;
+                }
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                  
+                    .dropdown-toggle {
+                    display: flex;
+                    text-align: left;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                    background: transparent;
+                    }
+                    .dropdown-menu {
+                      display: none;
+                      position: absolute;
+                      background-color: #f2f2f2;
+                      min-width: 400px;
+                      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                      border-radius: 5px;
+                      z-index: 1;
+                      margin-left: -150px;  
+                      padding: 20px 10px;
+                      li {
+                        button{
+                            background-color: #FFD814;
+                            padding: 10px 16px;
+                            cursor: pointer;
+                            width: 100%;
+                            text-align: center;
+                            border-radius: 10px;
+                        }
+                        a {
+                          text-decoration: none;
+                          color: black;
+                          display: block;
+                          transition: background-color 0.2s ease;
+                          padding: 20px 16px;
+                          &:hover {
+                            background-color: #ddd;
+                          }
+                        }
+                      }
+                    }
+                    &:hover .dropdown-menu {
+                      display: block;
+                    }
+                  }
+            }
+            // header account end 
+
+            .return{
+                color: #ffff;
+                transition: .5s linear;
+                padding: 5px 5px;
+                border: 1px solid #131921;
+                &:hover{
+                    border: 1px solid #fff;
+                }
+            }
+
+            .shop__flex{
+                a{
+                    color: #ffff;
+                    padding: 15px 10px;
+                    transition: .5s linear;
+                    border: 1px solid #131921;
+                    &:hover{
+                        border: 1px solid #ffff;
+                    }
+                }
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+            }
+        }
+    }
+}

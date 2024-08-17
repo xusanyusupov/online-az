@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="icon" href="./assets/image/png-transparent-logo-amazon-com-brand-flipkart-others-text-orange-logo.png">
+</head>
+
+<body class="bod">
+    <header>
+        <nav>
+            <div class="header__wrapper">
+                <!-- header logo start  -->
+                <div class="header__logo">
+                    <img src="./assets/image/nav-sprite-global-1x-reorg-privacy._CB587940754_.png" alt="">
+                </div>
+                <!-- header logo end  -->
+                <!-- header location start  -->
+                <div class="header__location">
+                    <button onclick="showPopper()" class="header__location-btn">
+                        <p>Deliver to</p>
+                        <strong><i class="fa-solid fa-location-dot"></i>Uzbekistan</strong>
+                    </button>
+                </div>
+                <!-- header location start  -->
+                <!-- popper start  -->
+                <div class="popper__wrapper">
+                    <div class="header__popper">
+                        <div class="popper__title">
+                            <strong>Choose your location</strong>
+                            <button onclick="hiddenPopper()" class="hidden"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="popper__body">
+                            <p>Delivery options and delivery speeds may vary for different locations</p>
+                            <button class="popper__body-btn">Sign in to see your addresses </address></button>
+                        </div>
+                        <div class="popper__line">
+                            <div class="line"></div>
+                            <p>or enter a US zip code</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="popper__inp">
+                            <input type="text">
+                            <button>Apply</button>
+                        </div>
+                        <div class="popper__line">
+                            <div class="line"></div>
+                            <p>or </p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="popper__location">
+                            <select>
+                                <option value="">Andijon </option>
+                                <option value="">Buxoro</option>
+                                <option value="">Farg‘ona </option>
+                                <option value="">Jizzax </option>
+                                <option value="">Namangan </option>
+                                <option value="">Navoiy </option>
+                                <option value="">Qashqadaryo </option>
+                                <option value="">Qoraqalpog‘iston Respublikasi</option>
+                                <option value="">Samarqand </option>
+                                <option value="">Surxondaryo </option>
+                                <option value="">Toshkent viloyati</option>
+                                <option value="">Toshkent shahri </option>
+                                <option value="">Xorazm </option>
+                            </select>
+                        </div>
+                        <div class="popper__btn">
+                            <button class="popper__done">Done</button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- popper end  -->
+                <!-- header search start  -->
+                <div class="header__search">
+                    <div class="header__search-category">
+                        <select>
+                            <option title="All" value="">All</option>
+                            <option title="All Departments" value="">All D </option>
+                            <option title="Arts & Crafts" value="">Arts </option>
+                            <option title="Automotive" value="">Automotive</option>
+                            <option title="Baby" value="">Baby</option>
+                            <option title="Boys Fashion" value="">Boys</option>
+                            <option title="Computers" value="">Computers</option>
+                            <option title="Deals" value="">Deals</option>
+                            <option title="Digital" value="">Digital</option>
+                        </select>
+                        <input type="text" placeholder="Search Amazon">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+                <!-- header search end  -->
+
+                <div class="header__language">
+                    <button onclick="show()" class="show"><i class="fa-solid fa-globe"></i>Language</button>
+                    <!-- language start popper  -->
+                    <div class="none">
+                        <div class="language__popper">
+                            <p><a href="#">Change language Learn more</a>
+                                <i title="close tab" onclick="hide()" class="fa-regular fa-eye-slash hidden"></i>
+                            </p>
+                            <div class="flex top">
+                                <label for="pop">
+                                    <input type="radio" name="language" value="language" id="pop">
+                                    <p>English - EN</p>
+                                </label>
+                            </div>
+                            <div class="flex">
+                                <label for="for">
+                                    <input type="radio" name="language" value="language" id="for">
+                                    <p>Russia - RU</p>
+                                </label>
+                            </div>
+                            <div class="flex">
+                                <label for="nth">
+                                    <input type="radio" name="language" value="language" id="nth">
+                                    <p>Germany - GR</p>
+                                </label>
+                            </div>
+                            <div class="flex">
+                                <label for="los">
+                                    <input type="radio" name="language" value="language" id="los">
+                                    <p>Deutsch - DE</p>
+                                </label>
+                            </div>
+                            <div class="flex bottom">
+                                <label for="pt">
+                                    <input type="radio" name="language" value="language" id="pt">
+                                    <p>Portugues - PT</p>
+                                </label>
+                            </div>
+                            <div class="chenge__current">
+                                <p>CHANGE CURRENSY
+                                    <a href="#">learn more</a>
+                                </p>
+                                <div class="between">
+                                    <p>$ - USD - US Dollar</p>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+                            <div class="flag">
+                                <img src="./assets/image/icons8-usa-flag-48.png" alt="">
+                                <p>You are shopping on Amazon.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- language end popper  -->
+                </div>
+
+
+                <div class="header__account">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle">
+                            <p>Hello sign in <br> <strong> Account & Lists <i class="fa-solid fa-caret-down"></i>
+                                </strong></p>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button>Sign in <i class="fa-solid fa-right-to-bracket"></i></button>
+                            </li>
+                            <li><strong>Your Account</strong></li>
+                            <li><a href="#">Account <i class="fa-solid fa-user"></i></a></li>
+                            <li><a href="#">Orders <i class="fa-brands fa-jedi-order"></i></a></li>
+                            <li><a href="#">Recomendations <i class="fa-solid fa-heart"></i></a></li>
+                            <li><a href="#">Browing History <i class="fa-solid fa-clock-rotate-left"></i></a></li>
+                            <li><a href="#">Watch List <i class="fa-solid fa-list"></i></a></li>
+                            <li><a href="#">Kindle unlimited <i class="fa-solid fa-infinity"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="return">
+                    <p>Return <br> <strong>& Others</strong></p>
+                </div>
+
+                <div class="shop__flex">
+                    <a href="#">
+                        <span>Cards shop </span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bottom__header">
+        <ul class="maini">
+            <li>
+                <a onclick="wiewsaidbar()" class="all" href="#"><i class="fa-solid fa-bars"></i> All</a>
+            </li>
+            <li>
+                <a href="#">Today's Deals</a>
+            </li>
+            <li>
+                <a href="#"> Customer Service</a>
+            </li>
+            <li>
+                <a href="#"> Registry</a>
+            </li>
+            <li>
+                <a href="#"> Gift Cards</a>
+            </li>
+            <li>
+                <a href="#"> Sell</a>
+            </li>
+        </ul>
+        <div class="saidbar">
+            <div class="saidbar__title">
+                <div class="flex__title">
+                    <i class="fa-regular fa-user"></i>
+                    <h3><strong>Hello, sign in </strong></h3>
+                </div>
+                <p onclick="hidesaidbar()" class="hidesaidbar">&#10006;</p>
+            </div>
+            <!-- saidbar start  -->
+            <div class="saidbar__wrapper">
+                <div class="catalog__one">
+                    <strong>Digital Content & Devices</strong>
+                    <a href="#">Amazon music <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#">Kindle E-readers & Books <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#">Amazon Appstore <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+                <div class="catalog__two">
+                    <strong>Shop by Department</strong>
+                    <a href="#"> Electronics <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#">Computers <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#"> Smart home <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#"> Art crafts <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#" onclick="seeitem()" class="allview"> See all <i
+                            class="fa-solid fa-arrow-down"></i></i></a>
+
+                    <a href="#"> Electronics <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#">Computers <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#"> Smart home <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#"> Art crafts <i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#" onclick="hideitem()"> Hide all <i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </div>
+            <!-- saidbar end  -->
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__background"></div>
+                
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let popper__wrapper = document.querySelector('.popper__wrapper')
+        let hidden = document.querySelector('.hidden')
+        function showPopper() {
+            popper__wrapper.style.display = 'block'
+        }
+        function hiddenPopper() {
+            popper__wrapper.style.display = 'none'
+        }
+
+        // button chiqarish un 
+        let showbtn = document.querySelector('.show')
+        // yashirish uchun 
+        let nonediv = document.querySelector('.none')
+        function show() {
+            nonediv.style.display = 'block'
+        }
+        function hide() {
+            nonediv.style.display = 'none'
+        }
+
+
+
+        // Saidbar 
+
+        let als = document.querySelector('.all')
+        let saidbar = document.querySelector('.saidbar')
+        let hidesaid = document.querySelector('.hidesaidbar')
+
+        function wiewsaidbar() {
+            saidbar.style.left = '0'
+        }
+
+        function hidesaidbar() {
+            saidbar.style.left = '-370px'
+        }
+        // Saidbar end
+
+        let seeall = document.querySelector('.allview')
+        let twocatalog = document.querySelector('.catalog__two')
+
+        function seeitem() {
+            twocatalog.style.overflow = 'visible'
+            twocatalog.style.transition = "2s ease"
+            twocatalog.style.border = "none"
+        }
+
+        function hideitem() {
+            twocatalog.style.overflow = 'hidden'
+            twocatalog.style.borderBottom = "1px solid #dddd"
+        }
+    </script>
+
+</body>
+
+</html>
